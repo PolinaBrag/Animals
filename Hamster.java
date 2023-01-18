@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Hamster extends Pet {
 
-    public Hamster(String name, String dateOfBirth, ArrayList<Command> commands) {
-        super(name, dateOfBirth, commands);
+    public Hamster(String name, String dateOfBirth) {
+        super(name, dateOfBirth);
     }
     
     @Override

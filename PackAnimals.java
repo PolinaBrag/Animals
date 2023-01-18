@@ -5,13 +5,11 @@ import java.util.ArrayList;
 public class PackAnimals extends Animal {
 
     private Double carryingCapacity;
-    public ArrayList<Command> commands = new ArrayList<>(); 
 
 
-    public PackAnimals(String name, String dateOfBirth, Double carryingCapacity, ArrayList<Command> commands) {
+    public PackAnimals(String name, String dateOfBirth, Double carryingCapacity) {
         super(name, dateOfBirth);
         this.carryingCapacity = carryingCapacity;
-        this.commands = commands;
     }
 
     public Double getCarryingCapacity() {
@@ -24,7 +22,17 @@ public class PackAnimals extends Animal {
 
     @Override
     public String toString() {
-        return String.format("Кличка: %s\nДата рождения: %s\n", getName(), getDateOfBirth(), this.carryingCapacity);
+        return String.format("Кличка: %s\nДата рождения: %s\n", super.getName(), super.getDateOfBirth(), this.carryingCapacity);
+    }
+
+    @Override
+    public void learnCommand(String command, Animal animal) {
+        super.learnCommand(command, animal);
+    }
+
+    @Override
+    public void printCommands(ArrayList<String> commands) {
+        super.printCommands(commands);
     }
     
 }

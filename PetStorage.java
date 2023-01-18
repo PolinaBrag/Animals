@@ -11,6 +11,7 @@ public class PetStorage implements Storage<Pet>{
         if (!pets.contains(newPet)) {
             pets.add(newPet);
         }
+
     }
 
     @Override
@@ -19,6 +20,13 @@ public class PetStorage implements Storage<Pet>{
             pets.remove(pet);
         }
         
+    }
+
+    public void printPets(ArrayList<Pet> pets) {
+        for (Pet p : pets) {
+            System.out.println(p.getName());
+        }
+
     }
     
 }

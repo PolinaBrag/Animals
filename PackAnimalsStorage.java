@@ -20,5 +20,12 @@ public class PackAnimalsStorage implements Storage<PackAnimals>{
             packAnimals.remove(animalPack);
         }
     }
+
+    public void printPackAnimals(ArrayList<PackAnimals> PackAnimals) {
+        for (PackAnimals p : PackAnimals) {
+            System.out.println(p.getName());
+        }
+
+    }
     
 }

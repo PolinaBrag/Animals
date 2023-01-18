@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Horse extends PackAnimals {
 
-    public Horse(String name, String dateOfBirth, Double carryingCapacity, ArrayList<Command> commands) {
-        super(name, dateOfBirth, carryingCapacity, commands);
+    public Horse(String name, String dateOfBirth, Double carryingCapacity) {
+        super(name, dateOfBirth, carryingCapacity);
     }
     
     @Override

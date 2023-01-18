@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Dog extends Pet {
 
-    public Dog(String name, String dateOfBirth, ArrayList<Command> commands) {
-        super(name, dateOfBirth, commands);
+    public Dog(String name, String dateOfBirth) {
+        super(name, dateOfBirth);
     }
     
     @Override

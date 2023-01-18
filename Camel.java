@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Camel extends PackAnimals {
 
-    public Camel(String name, String dateOfBirth, Double carryingCapacity, ArrayList<Command> commands) {
-        super(name, dateOfBirth, carryingCapacity, commands);
+    public Camel(String name, String dateOfBirth, Double carryingCapacity) {
+        super(name, dateOfBirth, carryingCapacity);
     }
     
     @Override
