@@ -1,6 +1,4 @@
-package Animals;
-
-import Animals.Animals.Animal;
+package Animals.Animals;
 
 public class Pet extends Animal {
 

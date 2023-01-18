@@ -2,7 +2,7 @@ package Animals.Animals;
 
 public class Donkey extends Pack_animals {
 
-    public Donkey(String name, String dateOfBirth, Float carryingCapacity) {
+    public Donkey(String name, String dateOfBirth, Double carryingCapacity) {
         super(name, dateOfBirth, carryingCapacity);
     }
 
