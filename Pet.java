@@ -1,10 +1,16 @@
 package Animals.Animals;
 
+import java.util.ArrayList;
+
 public class Pet extends Animal {
 
-    public Pet(String name, String dateOfBirth) {
+    public ArrayList<Command> commands = new ArrayList<>(); 
+    
+    public Pet(String name, String dateOfBirth, ArrayList<Command> commands) {
         super(name, dateOfBirth);
+        this.commands = commands;
     }
+
  
     @Override
     public String toString() {

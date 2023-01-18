@@ -1,9 +1,11 @@
 package Animals.Animals;
 
+import java.util.ArrayList;
+
 public class Cat extends Pet {
 
-    public Cat(String name, String dateOfBirth) {
-        super(name, dateOfBirth);
+    public Cat(String name, String dateOfBirth, ArrayList<Command> commands) {
+        super(name, dateOfBirth, commands);
     }
     
     @Override

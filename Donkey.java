@@ -1,9 +1,11 @@
 package Animals.Animals;
 
+import java.util.ArrayList;
+
 public class Donkey extends PackAnimals {
 
-    public Donkey(String name, String dateOfBirth, Double carryingCapacity) {
-        super(name, dateOfBirth, carryingCapacity);
+    public Donkey(String name, String dateOfBirth, Double carryingCapacity, ArrayList<Command> commands) {
+        super(name, dateOfBirth, carryingCapacity, commands);
     }
 
     @Override

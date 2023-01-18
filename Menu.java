@@ -1,5 +1,6 @@
 package Animals.Animals;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Menu {
@@ -22,7 +23,12 @@ public class Menu {
                     String name = sc.next();
                     System.out.println("Введите дату рождения животного в формате DD.MM.YYYY :" + "\n");
                     String date = sc.next();
-                    Pet newPet = new Pet(name, date);
+                    System.out.println("Введите название команды, которую умеет выполнять животное :" + "\n");
+                    String commandName = sc.next();
+                    Command command = new Command(commandName);
+                    ArrayList<Command> commands = new ArrayList<>();
+                    commands.add(command);
+                    Pet newPet = new Pet(name, date, commands);
                     RegisterAnimal.addPet(newPet);
                 }
                 if (typeAnimal == 2){
@@ -32,7 +38,12 @@ public class Menu {
                     String date = sc.next();
                     System.out.println("Введите грузоподъемность животного в формате KG.GR :" + "\n");
                     Double carry = sc.nextDouble();
-                    PackAnimals newPackAnimal = new PackAnimals(name, date, carry);
+                    System.out.println("Введите название команды, которую умеет выполнять животное :" + "\n");
+                    String commandName = sc.next();
+                    Command command = new Command(commandName);
+                    ArrayList<Command> commands = new ArrayList<>();
+                    commands.add(command);
+                    PackAnimals newPackAnimal = new PackAnimals(name, date, carry, commands);
                     RegisterAnimal.addPackAnimal(newPackAnimal);
                 }
             } else if (menuinput == 2) {

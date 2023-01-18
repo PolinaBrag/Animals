@@ -1,13 +1,17 @@
 package Animals.Animals;
 
+import java.util.ArrayList;
+
 public class PackAnimals extends Animal {
 
     private Double carryingCapacity;
+    public ArrayList<Command> commands = new ArrayList<>(); 
 
 
-    public PackAnimals(String name, String dateOfBirth, Double carryingCapacity) {
+    public PackAnimals(String name, String dateOfBirth, Double carryingCapacity, ArrayList<Command> commands) {
         super(name, dateOfBirth);
         this.carryingCapacity = carryingCapacity;
+        this.commands = commands;
     }
 
     public Double getCarryingCapacity() {
