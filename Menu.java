@@ -49,13 +49,38 @@ public class Menu {
             } else if (menuinput == 2) {
                 //действие2
             } else if (menuinput == 3) {
-                //действие3
+                System.out.println("Введите имя животного, которого нужно обучить команде:" + "\n");
+                String name = sc.next();
+                System.out.println("Введите название команды, которой нужно обучить животное:" + "\n");
+                String nameCommand = sc.next();
+                Command command = new Command(nameCommand);
+                System.out.println(
+                    "Выберите тип животного:" + "\n"
+                        + "1. Домашнее животное" + "\n"
+                        + "2. Вьючное животное" + "\n"
+                );
+                int typeAnimal = sc.nextInt();
+                if (typeAnimal == 1){
+                    PetStorage st = new PetStorage();
+                    for (int i = 0; i < st.pets.size(); i++) {
+                        if (st.pets.get(i).getName() == name){
+                            command.learnCommandPet(command, st.pets.get(i));
+                        }
+                    }   
+                }
+                if (typeAnimal == 2){
+                    PackAnimalsStorage st = new PackAnimalsStorage();
+                    for (int i = 0; i < st.packAnimals.size(); i++) {
+                        if (st.packAnimals.get(i).getName() == name){
+                            command.learnCommandPackAnimal(command, st.packAnimals.get(i));
+                        }
+                }
             } else if (menuinput == 4) {
                 exit = true;
             }
             sc.close();
         }
-        
+    }
     }
 
     
