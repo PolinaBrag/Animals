@@ -1,7 +1,5 @@
 package Animals.Animals;
 
-import Animals.Pet;
-
 public class Cat extends Pet {
 
     public Cat(String name, String dateOfBirth) {
