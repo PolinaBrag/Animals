@@ -1,6 +1,6 @@
 package Animals.Animals;
 
-public class Camel extends Pack_animals {
+public class Camel extends PackAnimals {
 
     public Camel(String name, String dateOfBirth, Double carryingCapacity) {
         super(name, dateOfBirth, carryingCapacity);
