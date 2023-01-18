@@ -1,11 +1,11 @@
 package Animals.Animals;
 
-public class Pack_animals extends Animal {
+public class PackAnimals extends Animal {
 
     private Double carryingCapacity;
 
 
-    public Pack_animals(String name, String dateOfBirth, Double carryingCapacity) {
+    public PackAnimals(String name, String dateOfBirth, Double carryingCapacity) {
         super(name, dateOfBirth);
         this.carryingCapacity = carryingCapacity;
     }
