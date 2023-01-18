@@ -1,5 +1,7 @@
 package Animals.Animals;
 
+import java.util.ArrayList;
+
 public class PackAnimals extends Animal {
 
     private Double carryingCapacity;
@@ -20,7 +22,17 @@ public class PackAnimals extends Animal {
 
     @Override
     public String toString() {
-        return String.format("Кличка: %s\nДата рождения: %s\n", getName(), getDateOfBirth(), this.carryingCapacity);
+        return String.format("Кличка: %s\nДата рождения: %s\n", super.getName(), super.getDateOfBirth(), this.carryingCapacity);
+    }
+
+    @Override
+    public void learnCommand(String command, Animal animal) {
+        super.learnCommand(command, animal);
+    }
+
+    @Override
+    public void printCommands(ArrayList<String> commands) {
+        super.printCommands(commands);
     }
     
 }
